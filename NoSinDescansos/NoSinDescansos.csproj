@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="alarma.wav" />
+    <None Remove="contador.png" />
+    <None Remove="contador_16x16.png" />
+    <None Remove="contador_16x19.png" />
+    <None Remove="contador_256x256.png" />
+    <None Remove="down.png" />
+    <None Remove="up.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="alarma.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="up.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="contador.png" />
+    <Resource Include="contador_16x16.png" />
+    <Resource Include="contador_16x19.png" />
+    <Resource Include="contador_256x256.png" />
+  </ItemGroup>
+
+</Project>
