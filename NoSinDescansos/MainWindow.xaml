@@ -26,7 +26,7 @@
         <!-- Botones -->
         <Button Grid.Row="1" x:Name="btnComenzar" Content="▶️" Click="btnComenzar_Click" Margin="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="22"/>
         <Button Grid.Row="1" Grid.Column="1" x:Name="btnParar" Content="⏹️"  Click="btnParar_Click" Margin="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="22" IsEnabled="false"/>
-        <Button Grid.Row="1" Grid.Column="2" x:Name="btnResetear" Content="🔄️" Click="btnResetear_Click" Margin="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="22"/>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="btnResetear" Content="🔄️" Click="btnResetear_Click" Margin="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="22" IsEnabled="False"/>
         <Button Grid.Row="1" Grid.Column="3" x:Name="btnRegistro" Content="📃" Margin="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="22" Click="btnRegistro_Click"/>
 
         <!-- Indicar el tiempo de la jornada -->
@@ -34,10 +34,10 @@
         
         <!-- Aumenta o disminuye el tiempo de la jornada -->
         <StackPanel Orientation="Vertical" HorizontalAlignment="Right"  VerticalAlignment="Center">
-            <Button x:Name="Incrementar" Height="20" Click="Incrementar_Click">
+            <Button x:Name="btnIncrementar" Height="20" Click="Incrementar_Click">
                 <Image Source="up.png" Height="10" Width="15"/>
             </Button>
-            <Button x:Name="Decrementar" Height="20" Click="Decrementar_Click">
+            <Button x:Name="btnDecrementar" Height="20" Click="Decrementar_Click">
                 <Image Source="down.png" Height="10" Width="15"/>
             </Button>
         </StackPanel>
